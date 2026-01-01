@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+#bodybox {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(../images/background_white.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+}
+
+#contentbox {
+    width: 250px;
+    height: 100px;
+    padding: 40px;
+    flex-direction: column;
+    z-index: 100;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #000000;
+}
+
+input {
+    background-color: rgba(255, 255, 255, 0.86);
+    border: 0;
+    padding: 0 16px;
+    margin: 6px 0;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+    font-style: oblique;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#signincontrol {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgba(17, 0, 78, 0.6);
+}
+

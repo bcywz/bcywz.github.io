@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=flase" />
+    <link rel="stylesheet" href="assets/css/end.css" />
+    <title>end</title>
+</head>
+
+<body>
+    <div id="bodybox">
+        <div id="switchbox">
+            <label class="switch">
+                <input type="checkbox" id="switchbtn" />
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </div>
+    <div id="contentbox">
+        <div class="textbox">
+            <p id="visibletext">THE END</p>
+        </div>
+        <div class="textbox">
+            <p id="hidetxt">吗<a href="https://bcywz.github.io/arg/?.html">？</a></p>
+        </div>
+    </div>
+    </div>
+
+</body>
+<script>
+    var checkbox = document.getElementById("switchbtn");
+    var bodybox = document.getElementById("bodybox");
+    var contentbox = document.getElementById("contentbox");
+    var hidetxt = document.getElementById("hidetxt");
+    checkbox.addEventListener("change", function () {
+        if (this.checked) {
+            bodybox.style.backgroundColor = "black";
+            contentbox.style.color = "white";
+            hidetxt.style.display = "block";
+        }
+        else {
+            bodybox.style.backgroundColor = "white";
+            contentbox.style.color = "black";
+            hidetxt.style.display = "none";
+        }
+    });
+</script>
+
+</html>
